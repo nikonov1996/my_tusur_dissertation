@@ -1,0 +1,43 @@
+{
+  "name": "dev9.redramka.ru",
+  "version": "1.0.0",
+  "description": "autotests for project: \"Zener\", on dev-url: dev9.redramka.ru ",
+  "scripts": {
+    "test": "jest",
+    "report": "allure serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.redramka.ru/nva/redramka_autotests/"
+  },
+  "keywords": [
+    "zener",
+    "autotest",
+    "e2e",
+    "ui"
+  ],
+  "author": "QA",
+  "license": "ISC",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-allure/dist/setup"
+    ]
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "faker": "^4.1.0",
+    "jest": "^25.1.0",
+    "jest-allure": "^0.1.1",
+    "jest-mock-axios": "^4.0.0",
+    "log4js": "^6.1.2",
+    "puppeteer": "^2.0.0",
+    "request": "^2.88.2"
+  }
+}
